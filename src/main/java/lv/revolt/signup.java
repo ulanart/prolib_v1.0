@@ -16,7 +16,7 @@ public class signup extends WebPage
 	{
 		super(parameters);
 		Form form = new Form("form");
-		form.add(new Button("signup")
+		form.add(new Button("confirm")
 		{
 			@Override
 			public void onSubmit()
