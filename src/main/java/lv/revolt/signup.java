@@ -1,6 +1,7 @@
 package lv.revolt;
 
 import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Button;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.TextField;
@@ -27,5 +28,6 @@ public class signup extends WebPage
 			}
 		});
 		add(form);
+		add(new Label("message","Please fill the fields below and press Confirm Button"));
 	}
 }

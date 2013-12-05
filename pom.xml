@@ -60,6 +60,13 @@
 		</dependency>
 		-->
 
+	<!-- Maven h2 -->
+	<dependency>
+		<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+				<version>1.3.174</version>
+	</dependency>
+
 		<!-- LOGGING DEPENDENCIES - LOG4J -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -79,7 +86,12 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-
+		<!--MAVEN h2 DB DEPENDENCY -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+			<version>1.3.174</version>
+		</dependency> 
 		<!--  JETTY DEPENDENCIES FOR TESTING  -->
 		<dependency>
 			<groupId>org.eclipse.jetty.aggregate</groupId>
@@ -87,6 +99,25 @@
 			<version>${jetty.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- JAVASSIST -->
+		<dependency>
+			<groupId>javassist</groupId>
+				<artifactId>javassist</artifactId>
+			<version>3.12.1.GA</version>
+		</dependency>
+        <!-- HIBERNATE Dependency -->
+        <dependency>
+			<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>4.3.0.Beta5</version>
+		</dependency>
+		<!-- SPRING -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>3.2.5.RELEASE</version>
+		</dependency>
+                
 	</dependencies>
 	<build>
 		<resources>
